@@ -1,386 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
     <head>
-      <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-      <meta charset="utf-8" />
-      <meta
-        name="viewport"
-        content="width=device-width,
-				initial-scale=1"
-      />
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,
+				initial-scale=1" />
 
-      <link rel="icon" href="public/image/ACM-Logo.ico">
+        <link rel="icon" href="public/image/ACM-Logo.ico">
 
-      <title>Our Team</title>
+        <title>Our Team</title>
 
-      <!--=============== REMIX ICONS ===============-->
-      <link
-        href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-        rel="stylesheet"
-      />
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-      <!-- Bootstrap CSS -->
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-        crossorigin="anonymous"
-      />
-      <link rel="stylesheet" href="style.css" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="stylesheet" href="team_style.css" />
-      <style></style>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="team_style.css" />
+        <style></style>
     </head>
-    <body>
-      <section id="navbar">
+
+<body>
+    <section id="navbar">
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img
-                src="public/image/ACM Logo Final.png"
-                class="nav-img"
-                alt=""
-              />
-              ACM-YCCE
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="achievement.html">Achievements</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="team.html">Team</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#social">Contact Us</a>
-                </li>
-              </ul>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="public/image/ACM Logo Final.png" class="nav-img" alt="" />
+                    ACM-YCCE
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="achievement.html">Achievements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#social">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </nav>
-      </section>
+    </section>
 
-      
 
-      <!-- ***************************************************************************
+
+    <!-- ***************************************************************************
     ***************************************************************************
     *************************************************************************** -->
 
     <section class="team-section">
-      <div class="container">
-          <!-- Faculty -->
-          <div class="row">
-              <div class="section-title">
-                  <h1>Our Faculty</h1>
-                  <!-- <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic
+        <div class="container">
+            <!-- Faculty -->
+            <div class="row">
+                <div class="section-title">
+                    <h1>Our Faculty</h1>
+                    <!-- <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic
                       or web designs.</p> -->
-              </div>
-          </div>
-          <div class="row">
-              <div class="team-items">
-                  <div class="item">
-                      <img src="public/image/rakhimam.jpg" alt="team" />
-                      <div class="inner">
-                          <div class="info">
-                              <h5>Dr Rakhi Wajgi</h5>
-                              <p>HoD, Computer Technology</p>
-                              <div class="social-links">
-                                  <a href="" target="_blank"><span class="fa fa-twitter"></span></a>
-                                  <a href="" target="_blank"><span class="fa fa-linkedin"></span></a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <img src="public/image/lalit-damahe.jpg" alt="team" />
-                      <div class="inner">
-                          <div class="info">
-                              <h5>Dr Lalit Damahe</h5>
-                              <p>HoD, Computer Science & Engineering</p>
-                              <div class="social-links">
-                                  <a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter"></span></a>
-                                  <a href="https://in.linkedin.com/in/dr-lalit-damahe-858797155" target="_blank"><span class="fa fa-linkedin"></span></a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-
-              <div class="row">
-                  <div class="team-items">
-                      <div class="item">
-                          <img src="public/image/supriyamam.jpg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Supriya Thombre</h5>
-                                  <p>CT Faculty Co-ordinator</p>
-                                  <div class="social-links">
-                                      <a href="" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="item">
-                          <img src="public/image/Pratibhamam.jpg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Pratibha Waghale</h5>
-                                  <p>CSE Faculty Co-ordinator</p>
-                                  <div class="social-links">
-                                      <a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="https://www.linkedin.com/" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- ACM CORE -->
-              <div class="row">
-                  <div class="section-title">
-                      <h1>ACM YCCE CORE TEAM</h1>
-                      <!-- <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic
-                      or web designs.</p> -->
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="team-items">
-                      <div class="item">
-                          <img src="public/image/sakshi.jpg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Sakshi Kokardekar</h5>
-                                  <p>Chairperson</p>
-                                  <div class="social-links">
-                                      <a href="" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="item">
-                          <img src="public/image/Sudhanshu.jpg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Sudhanshu Nerkar</h5>
-                                  <p>Vice-Chairperson</p>
-                                  <div class="social-links">
-                                      <a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="https://in.linkedin.com/in/sudhanshu-nerkar-746b25207" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="item">
-                          <img src="public/image/Adwait.jpg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Adwait Tikekar</h5>
-                                  <p>Treasurer</p>
-                                  <div class="social-links">
-                                      <a href="https://twitter.com/AdwaitTikekar?t=SLAcP1YQ4mT4ivGIO1FgFQ&s=09" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="https://www.linkedin.com/in/adwait-tikekar-07673a238" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="item">
-                          <img src="public/img/gunjan.jpg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Gunjan Khonde</h5>
-                                  <p>Secretary</p>
-                                  <div class="social-links">
-                                      <a href="" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- CT -->
-              <div class="row">
-                  <div class="section-title">
-                      <h1>CT ACM Representatives</h1>
-                      <!-- <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic
-                      or web designs.</p> -->
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="team-items">
-                      <div class="item">
-                          <img src="public/image/sakshi.jpg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Sakshi Kokardekar</h5>
-                                  <p>Chairperson</p>
-                                  <div class="social-links">
-                                      <a href="" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="item">
-                          <img src="public/image/Himanshu.jpg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Himanshu Agarkar</h5>
-                                  <p>Vice-Chairperson</p>
-                                  <div class="social-links">
-                                      <a href="https://twitter.com/him_himanshua?t=EV5jR72aMzcAstOVcj5jDQ&s=09" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="https://www.linkedin.com/in/himanshu-agarkar" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="item">
-                          <img src="public/image/nikhil.jpg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Nikhil Tamrakar</h5>
-                                  <p>Secretary</p>
-                                  <div class="social-links">
-                                      <a href="" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="section-title">
-                      <h1>CSE ACM Representatives</h1>
-                      <!-- <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic
-                      or web designs.</p> -->
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="team-items">
-                      <div class="item">
-                          <img src="public/img/Sudhanshu.jpg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Sudhanshu Nerkar</h5>
-                                  <p>Chairperson</p>
-                                  <div class="social-links">
-                                      <a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="https://in.linkedin.com/in/sudhanshu-nerkar-746b25207" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="item">
-                          <img src="public/image/jays.jpeg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Jay Shende</h5>
-                                  <p>Secretary</p>
-                                  <div class="social-links">
-                                      <a href="https://twitter.com/Jayshende17" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="https://www.linkedin.com/in/jay-shende-2a5505209" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="item">
-                          <img src="public/image/Adwait.jpg" alt="team" />
-                          <div class="inner">
-                              <div class="info">
-                                  <h5>Adwait Tikekar</h5>
-                                  <p>Treasurer</p>
-                                  <div class="social-links">
-                                      <a href="https://twitter.com/AdwaitTikekar?t=SLAcP1YQ4mT4ivGIO1FgFQ&s=09" target="_blank"><span class="fa fa-twitter"></span></a>
-                                      <a href="https://www.linkedin.com/in/adwait-tikekar-07673a238" target="_blank"><span class="fa fa-linkedin"></span></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  </section>
-
-  
-
-</main><!-- End #main -->
-
-
-      <!-- footer -->
-      <section id="footer" id="social">
-        <section id="banner">
-          <div class="container-fluid" id="banner-container">
-            <div class="row" id="banner-row">
-              <div class="col-md-4" id="footer-col1">
-                <h3>Location</h3>
-                <p>Yeshwantrao Chavan College of Engineering
-                  Hingna Road, Wanadongri, Nagpur- 441110<br>
-                  State : Maharashtra<br>
-                  Country : India</p>
-              </div>
-              <div class="col-md-4" id="footer-col2">
-                <h3>Contact Us</h3>
-  
-                <p>Email Us- acmscycce@gmail.com</p>
-  
-                
-              </div>
-              <div class="col-md-4" id="footer-col2">
-                <h3>Design & Developed by</h3>
-  
-                <p>Team ACM-YCCE</p>
-  
-                
-              </div>
+                </div>
             </div>
-          </div>
+            <div class="row">
+
+                <div class="team-items">
+                    <div class="card">
+                        <div class="top-section">
+                            <div class="border1"></div>
+                            <div class="icons">
+                                <div class="social-media">
+                                    <a href="" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                            height="24" viewBox="0 0 24 24" class="linkedIN">
+                                            <path fill="#FFFFFF"
+                                                d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                        </svg></a>
+                                    <a href="" target="_blank">
+                                        <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512">
+                                            <path
+                                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                            </path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-section">
+                            <span class="title">Dr Lalit Damahe</span>
+                            <span class="title2">HoD, Computer Science & Engineering</span>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="top-section ct-hod">
+                            <div class="border1"></div>
+                            <div class="icons">
+                                <div class="social-media">
+                                    <a href="" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                            height="24" viewBox="0 0 24 24" class="linkedIN">
+                                            <path fill="#FFFFFF"
+                                                d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                        </svg></a>
+                                    <a href="" target="_blank">
+                                        <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512">
+                                            <path
+                                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                            </path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-section">
+                            <span class="title">Dr Rakhi Wajgi</span>
+                            <span class="title2">HoD, Computer Technology</span>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin:40px 0px">
+                    <div class="team-items">
+                        <div class="card">
+                            <div class="top-section cse-pratibha-madam">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="" target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title">Pratibha Waghale</span>
+                                <span class="title2">CSE Faculty Co-ordinator</span>
+
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="top-section ct-supriya-madam">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="" target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title">Supriya Thombre</span>
+                                <span class="title2">CT Faculty Co-ordinator</span>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- ACM CORE -->
+                <div class="row" style="margin:50px 0px">
+                    <div class="section-title">
+                        <h1>ACM YCCE CORE TEAM</h1>
+                        <!-- <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic
+                      or web designs.</p> -->
+                    </div>
+                </div>
+                <div class="row" style="margin:-30px 0px">
+                    <div class="team-items">
+                        <div class="card">
+                            <div class="top-section cse-Sudhanshu">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="https://in.linkedin.com/in/sudhanshu-nerkar-746b25207" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="" target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title">Sudhanshu Nerkar
+                                </span>
+                                <span class="title2"> ACM Chairperson</span>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="top-section ct-himanshu">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="https://www.linkedin.com/in/himanshu-agarkar" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="https://twitter.com/him_himanshua?t=EV5jR72aMzcAstOVcj5jDQ&s=09"
+                                            target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title">Himanshu Agarkar
+                                </span>
+                                <span class="title2">ACM Vice-Chairperson</span>
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="card">
+                            <div class="top-section cse-jay">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="https://www.linkedin.com/in/jay-shende-2a5505209/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="" target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title">Jay Shende
+                                </span>
+                                <span class="title2"> ACM Secretary </span>
+
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="top-section ct-anant">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="https://www.linkedin.com/in/anant-kale-aa637525a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                            target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="" target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title">Anant Kale
+                                </span>
+                                <span class="title2">ACM Treasurer </span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CT -->
+                <div class="row">
+                    <div class="section-title">
+                        <h1>CT ACM Representatives</h1>
+                        <!-- <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic
+                      or web designs.</p> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="team-items">
+
+
+
+                        <div class="card">
+                            <div class="top-section ct-himanshu">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="https://www.linkedin.com/in/himanshu-agarkar" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="https://twitter.com/him_himanshua?t=EV5jR72aMzcAstOVcj5jDQ&s=09"
+                                            target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title">Himanshu Agarkar
+                                </span>
+                                <span class="title2"> CT Chairperson</span>
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="top-section ct-tanish">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="https://www.linkedin.com/in/tanish-jhamtani-74235a248" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="" target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title">Tanish Jhamtani
+                                </span>
+                                <span class="title2"> CT Vice-Chairperson</span>
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="top-section ct-anant">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="https://www.linkedin.com/in/anant-kale-aa637525a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                            target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="" target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title">Anant Kale
+                                </span>
+                                <span class="title2">CT Treasurer </span>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="section-title">
+                        <h1>CSE ACM Representatives</h1>
+                        <!-- <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic
+                      or web designs.</p> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="team-items">
+                        <div class="card">
+                            <div class="top-section cse-Sudhanshu">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="https://in.linkedin.com/in/sudhanshu-nerkar-746b25207" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="" target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title">Sudhanshu Nerkar
+                                </span>
+                                <span class="title2"> CSE Chairperson</span>
+
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="top-section cse-jay">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="https://www.linkedin.com/in/jay-shende-2a5505209/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="" target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title">Jay Shende
+                                </span>
+                                <span class="title2"> CSE Vice-Chairperson </span>
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="top-section cse-Adwait">
+                                <div class="border1"></div>
+                                <div class="icons">
+                                    <div class="social-media">
+                                        <a href="https://www.linkedin.com/in/adwait-tikekar-07673a238/" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24"
+                                                height="24" viewBox="0 0 24 24" class="linkedIN">
+                                                <path fill="#FFFFFF"
+                                                    d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                                            </svg></a>
+                                        <a href="https://twitter.com/AdwaitTikekar?t=SLAcP1YQ4mT4ivGIO1FgFQ&s=09"
+                                            target="_blank">
+                                            <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                </path>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-section">
+                                <span class="title"> Adwait Tikekar
+                                </span>
+                                <span class="title2"> CSE Treasurer</span>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    </main><!-- End #main -->
+
+
+    <!-- footer -->
+    <section id="footer" id="social" style="margin-top: 100px;">
+        <section id="banner">
+            <div class="container-fluid" id="banner-container">
+                <div class="row" id="banner-row">
+                    <div class="col-md-4" id="footer-col1">
+                        <h3>Location</h3>
+                        <p>Yeshwantrao Chavan College of Engineering
+                            Hingna Road, Wanadongri, Nagpur- 441110<br>
+                            State : Maharashtra<br>
+                            Country : India</p>
+                    </div>
+                    <div class="col-md-4" id="footer-col2">
+                        <h3>Contact Us</h3>
+
+                        <p>Email Us- acmscycce@gmail.com</p>
+
+
+                    </div>
+                    <div class="col-md-4" id="footer-col2">
+                        <h3>Design & Developed by</h3>
+
+                        <p>Team ACM-YCCE</p>
+
+
+                    </div>
+                </div>
+            </div>
         </section>
-      </section>
+    </section>
 
-      <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"
-      ></script>
-    </body>
-  </head>
+        crossorigin="anonymous"></script>
+</body>
+</head>
+
 </html>
