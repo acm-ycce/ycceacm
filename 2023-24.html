@@ -1,160 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,
-				initial-scale=1"
-    />
 
-    <!--=============== REMIX ICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+<head>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,
+				initial-scale=1" />
 
-    <link rel="stylesheet" href="style.css">
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="events.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="style.css" />
 
-    <link rel="icon" href="public/image/ACM-Logo.ico">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link rel="stylesheet" href="events.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
 
-    <title>Events</title>
-  </head>
-  <body>
-    <section id="navbar">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="public/image/ACM Logo Final.png" class="nav-img" alt="" />
-            ACM-YCCE
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="achievement.html">Achievements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link" href="mailto:acmscycce@gmail.com">Contact Us</a>
-              </li>
-            </ul>
-          </div>
+  <link rel="icon" href="public/image/ACM-Logo.ico" />
+
+  <title>Events</title>
+</head>
+
+<body>
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="public/image/ACM Logo Final.png" class="nav-img" alt="" />
+          ACM-YCCE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="achievement.html">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:acmscycce@gmail.com">Contact Us</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </section>
+      </div>
+    </nav>
+  </section>
 
-    <h1 class="text-center">Events Calender</h1>
-    <h4 class="twohead">(Upcoming and Past Events)</h4>
-    <div class="alert alert-primary table-alert" role="alert">Click on Event Name to Know More</div>
+  <h1 class="text-center">Events Calender</h1>
+  <h4 class="twohead">(Upcoming and Past Events)</h4>
+  <div class="alert alert-primary table-alert" role="alert">
+    Click on Event Name to Know More
+  </div>
 
-  
-     
-    <h1 class="text-center"id="of">2023-24 Events</h1>
+  <h1 class="text-center" id="of">2023-24 Events</h1>
 
-    <table class="events-cal" style="width: 100%; max-width: 600px; margin: 0 auto;">
-      <tr>
-        <th>Sr.No.</th>
-        <th>Name of the Event</th>
-        <th>Date</th>
-      </tr>
-      <tr>
-        <td>1.</td>
-        <td><a href="#poco" class="event-name">Versus Coding</a></td>
-        <td>11/10/2023,12/10/2023</td>
-      </tr>
-      
-      <tr>
-        <td>2.</td>
-        <td><a href="#loco" class="event-name">Cyber Safe</a></td>
-        <td>11/10/2023</td>
-      </tr>
-      
-      <tr>
-        <td>3.</td>
-        <td><a href="#coco" class="event-name">UI UX BOOTCAMP</a></td>
-        <td>12/10/2023</td>
-      </tr>
-      
-      <tr>
-        <td>4.</td>
-        <td><a href="#doco" class="event-name">Scripted Secrets</a></td>
-        <td>12/10/2023</td>
-      </tr>
-      
-      <tr>
-        <td>5.</td>
-        <td><a href="#roco" class="event-name">Git and Github workshop</a></td>
-        <td>13/10/2023</td>
-      </tr>
-      </table>
+  <table class="events-cal" style="width: 100%; max-width: 600px; margin: 0 auto">
+    <tr>
+      <th>Sr.No.</th>
+      <th>Name of the Event</th>
+      <th>Date</th>
+    </tr>
 
-    
- 
+    <tr>
+      <td>1.</td>
+      <td><a href="#agora" class="event-name">Agora for You</a></td>
+      <td>11/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>2.</td>
+      <td><a href="#w3" class="event-name">WEB3 Seminar</a></td>
+      <td>11/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>3.</td>
+      <td>
+        <a href="#ethical" class="event-name">Hands-on Session on Ethical Hacking: Network Security</a>
+      </td>
+      <td>11/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>4.</td>
+      <td><a href="#linkedin" class="event-name">LinkedIn Seminar </a></td>
+      <td>12/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>5.</td>
+      <td><a href="#quiz" class="event-name">Debugging Quiz</a></td>
+      <td>13/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>6.</td>
+      <td><a href="#fade" class="event-name">Fad Frame</a></td>
+      <td>13/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>7.</td>
+      <td><a href="#talent" class="event-name">Talentesque</a></td>
+      <td>13/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>8.</td>
+      <td><a href="#fifa" class="event-name">FIFA fever cup</a></td>
+      <td>11/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>9.</td>
+      <td><a href="#talent" class="event-name">Cosmo Town</a></td>
+      <td>11/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>10.</td>
+      <td><a href="#desi" class="event-name">Desi Daredevils </a></td>
+      <td>12/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>11.</td>
+      <td><a href="#poco" class="event-name">Versus Coding</a></td>
+      <td>11/10/2023,12/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>12.</td>
+      <td><a href="#loco" class="event-name">Cyber Safe</a></td>
+      <td>11/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>13.</td>
+      <td><a href="#coco" class="event-name">UI UX BOOTCAMP</a></td>
+      <td>12/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>14.</td>
+      <td><a href="#doco" class="event-name">Scripted Secrets</a></td>
+      <td>12/10/2023</td>
+    </tr>
+
+    <tr>
+      <td>15.</td>
+      <td><a href="#roco" class="event-name">Git and Github workshop</a></td>
+      <td>13/10/2023</td>
+    </tr>
+  </table>
+  <section id="banner">
+    <div class="container-fluid" id="banner-container2">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="agora">Agora for You</h3>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            An illuminating seminar dedicated to Agora, where our
+            distinguished speaker will delve into the depths of this
+            cutting-edge platform. Agora has rapidly emerged as a pivotal
+            player in the world of real-time engagement, revolutionizing how
+            we connect and interact online. Discover how Agora's innovative
+            technologies are powering interactive live streaming, video,
+            voice, and messaging solutions across various domains, from
+            education and healthcare to gaming and social media. Get ready to
+            gain deeper insights into Agora's impact and explore how you can
+            leverage this powerful platform to create engaging and immersive
+            experiences.
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass" src="public/Events/upsurge2k23/Agora_new.jpeg"
+            alt="" id="clogo" style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="banner">
+    <div class="container-fluid" id="banner-container">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="w3">WEB3 Seminar</h3>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            Unveil the revolutionary era of Web3 in our upcoming seminar
+            scheduled for October 12th. Web3 represents a paradigm shift in
+            the way we interact with the digital world, and this seminar is
+            your gateway to understanding its profound impact. As Web3
+            continues to gain momentum and reshape industries, now is the time
+            to familiarise yourself with this game-changing technology. Mark
+            your calendar for October 12th and join us for an engaging seminar
+            that will unlock the possibilities of Web3 and its role in shaping
+            the digital landscape. Don't miss this chance to be at the
+            forefront of the Web3 revolution!
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass"
+            src="public/Events/upsurge2k23/WEB+3.0+Medium.png" alt="" id="clogo" style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="banner">
+    <div class="container-fluid" id="banner-container2">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="ethical">
+            Hands-on Session on Ethical Hacking: Network Security
+          </h3>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            On October 12th, gear up for an interactive and practical
+            exploration of cybersecurity in our hands-on session. In an
+            increasingly digital world, understanding how to protect your
+            online presence is paramount, and this session is designed to
+            equip you with essential skills. Please remember to bring your
+            laptops, as this session will be a true hands-on experience. Our
+            expert facilitator will guide you through a series of exercises,
+            simulations, and real-world scenarios to help you grasp the
+            fundamentals of cybersecurity. From identifying common
+            vulnerabilities to learning about encryption and safe browsing
+            practices, you'll gain valuable insights into safeguarding your
+            digital assets.
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass" src="public/Events/upsurge2k23/eh43+Medium.png"
+            alt="" id="clogo" style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="banner">
+    <div class="container-fluid" id="banner-container">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="linkedin">LinkedIn Seminar</h3>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            Unlock the full potential of your LinkedIn profile at our upcoming
+            seminar on October 13th. In today's digital age, LinkedIn has
+            become a crucial tool for professional networking and career
+            growth. Whether you're a job seeker, a business professional, or
+            simply looking to expand your network, this seminar is designed to
+            provide you with actionable strategies and tips to make your
+            LinkedIn profile stand out. But it doesn't stop there. Our speaker
+            will also discuss networking best practices, content sharing
+            strategies, and engagement techniques to help you make the most of
+            your LinkedIn presence. Whether you're a LinkedIn novice or
+            looking to fine-tune your existing profile, this seminar is your
+            gateway to improving your professional online image.
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass"
+            src="public/Events/upsurge2k23/LINKEDIN+Medium.png" alt="" id="clogo" style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="banner">
+    <div class="container-fluid" id="banner-container2">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="quiz">Debugging Quiz</h3>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            Welcome to the thrilling and highly anticipated "Debugging Quiz"
+            brought to you by Upsurge 2k23! Dive into the exciting world of
+            debugging, where precision meets intellect. This geeky competition
+            is designed to challenge participants, whether you're a budding
+            programmer or an experienced coder, to unravel the mysteries of
+            faulty code and emerge as the champion of debugging. With cash
+            prizes of rupees 1200, 1st rupees 800 & 2nd rupees 400, this is
+            your chance to showcase your debugging skills and claim the title
+            of debugging champion. Don't forget to bring your laptop, and
+            we'll see you on October 11th, 2023, at the Computer Science
+            Department!
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass"
+            src="public/Events/upsurge2k23/DEBUGGING+QUIZ+Medium.png" alt="" id="clogo"
+            style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="banner">
+    <div class="container-fluid" id="banner-container">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="fade">Fad Frame</h3>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            Welcome to FadFrame, where creativity and talent converge in two
+            thrilling competitions: • Trending Rhythms: Express yourself
+            through dance moves or your melodious voice.Whether solo or in a
+            group, showcase your artistic interpretation of popular songs. The
+            entry fee for Trending Rhythms is just 50 INR. • Captured Campus:
+            Lens Ready? Grab your smartphone (no cameras) and capture the
+            essence of our campus through your lens. Transform ordinary scenes
+            into extraordinary photos. The entry fee for Captured Campus is 30
+            INR. Register easily with Google Forms, Combine entry fees for
+            both challenges is 70 INR.
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass"
+            src="public/Events/upsurge2k23/FAD+FRAME+Large.jpeg" alt="" id="clogo" style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="banner">
+    <div class="container-fluid" id="banner-container2">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="talent">Talentesque</h3>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            Join us for an extraordinary showcase of talent at our upcoming
+            event on 13th Oct 2023. Participants from all backgrounds are
+            invited to take the stage and reveal their unique abilities, which
+            can encompass singing, dancing, poetry, stand-up comedy, playing
+            musical instruments, and any other remarkable skills they possess.
+            Each contestant or team will have a generous 3-minute window to
+            impress the audience, with the option to extend their performance
+            time upon request. Join us in the vibrant setting of the CSE
+            department, and for those eager to participate, entry fees are as
+            follows: Solo - 50rs, Duo - 80rs, and Groups of more than 2
+            members - 120rs. Exciting prizes await, with the 1st place winner
+            receiving 1000rs and the 2nd place winner taking home 700rs. Don't
+            miss your chance to shine and make a lasting impression!
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass"
+            src="public/Events/upsurge2k23/TALENT+SHOW1.png" alt="" id="clogo" style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="banner">
+    <div class="container-fluid" id="banner-container">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="fifa">FIFA fever cup</h3>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            Calling all FIFA fans! The FIFA Fever Cup, the most anticipated
+            FIFA showdown, is happening on October 11, 2023. Don't miss this
+            epic gaming event where you can put your skills to the test and
+            compete for exciting prizes! Whether you're a FIFA pro or just
+            looking for some fun, this is the event for you. Spots are
+            limited, so register now to secure your chance to shine on the
+            virtual field. All participants will receive e-certificates as a
+            token of appreciation. Get ready to immerse yourself in the world
+            of virtual football and join us for an unforgettable day of gaming
+            excitement.
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass" src="public/Events/upsurge2k23/fifa+43.jpeg"
+            alt="" id="clogo" style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="banner">
+    <div class="container-fluid" id="banner-container2">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="cosmo">Cosmo Town</h3>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            Experience a day of pure excitement and reward at our upcoming
+            event! On October 11th, 2023, at the CSE department YCCE, we're
+            hosting a thrilling event featuring a wide array of ten
+            captivating games, each designed to earn you valuable credits.
+            There's something for everyone to enjoy Here's how it works: Upon
+            registration, you'll receive an initial credit allocation to get
+            started. Throughout the event, you can use your credits to
+            participate in any of the exciting games we've set up. Want to
+            increase your chances? You can even purchase extra credits. The
+            more games you play, the more credits you can earn.
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass"
+            src="public/Events/upsurge2k23/COSMO+TOWN+Large.jpeg" alt="" id="clogo"
+            style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="banner">
+    <div class="container-fluid" id="banner-container">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="desi">Desi Daredevils</h3>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            Embrace the excitement of "Desi Daredevils," a dynamic 3-stage
+            game tailor-made for teams of four members. Each stage offers a
+            unique challenge, promising a day filled with laughter and
+            teamwork. Round 1: HURDLE RUSH - Exercise your mental and physical
+            prowess as you maneuver through a demanding obstacle course,
+            relying on your teammates to guide you towards victory. Round 2:
+            FOOD MATCHUP - If you're a food lover, this one's for you. Indulge
+            your taste buds in a delightful food adventure that promises a
+            delectable experience like no other. Round 3: DICE MYSTERY - The
+            grand finale is the mysterious "Dice Mystery," a life-sized game
+            inspired by ludo, brimming with larger-than-life excitement.
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass"
+            src="public/Events/upsurge2k23/DESI+DAREDEVILS.jpeg" alt="" id="clogo" style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="banner">
     <div class="container-fluid" id="banner-container2">
       <div class="row" id="banner-row">
         <div class="col-md-6" id="banner-col">
           <h3 id="poco">Versus Coding</h3>
-  
-          <p style="text-align: justify;
-                    text-justify: inter-word;">
-          The "Versus Coding" competition was organized by the Computer Technology Department as part of Compufest 2k23, and it
-          was conducted online on the HackerRank platform. The event was expertly coordinated by Badal Wanjari and Omkar
-          Kawadghare and was open to all young
-          aspirants. The competition Consisted of three rounds, with each team comprised of four students.
-          In each round, teams were presented with a set of problem statements and were required to compete against each other.
-          The criteria for elimination in the competition were based on both completion time and point accumulation. Those teams
-          that completed the tasks faster and obtained the highest points advanced to the next round. In the final round, the team
-          that completed the challenge the fastest and accrued the most points emerged as the winner of the Versus Coding
-          competition and received a cash prize. The winning team consisted of the following students: Yogendra Bhavsar, Vishal
-          Rathod, Pranay Malviya, and Tushar Kamale.
-            <br><br>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            The "Versus Coding" competition was organized by the Computer
+            Technology Department as part of Compufest 2k23, and it was
+            conducted online on the HackerRank platform. The event was
+            expertly coordinated by Badal Wanjari and Omkar Kawadghare and was
+            open to all young aspirants. The competition Consisted of three
+            rounds, with each team comprised of four students. In each round,
+            teams were presented with a set of problem statements and were
+            required to compete against each other. The criteria for
+            elimination in the competition were based on both completion time
+            and point accumulation. Those teams that completed the tasks
+            faster and obtained the highest points advanced to the next round.
+            In the final round, the team that completed the challenge the
+            fastest and accrued the most points emerged as the winner of the
+            Versus Coding competition and received a cash prize. The winning
+            team consisted of the following students: Yogendra Bhavsar, Vishal
+            Rathod, Pranay Malviya, and Tushar Kamale.
+            <br /><br />
             Faculty Coordinator: Prof. Supriya Thombre, Prof. Kalyani Karule
           </p>
         </div>
         <div class="col-md-6" id="banner-col2">
           <!-- <div class="clogo"> -->
-          <img class="img-responsive rounded mx-auto d-block clogoclass" src="public/Events/compufest2k23/versus_coding_page1_image.png"
-            alt="" id="clogo" style="width: 500px; height: auto;" />
+          <img class="img-responsive rounded mx-auto d-block clogoclass"
+            src="public/Events/compufest2k23/versus_coding_page1_image.png" alt="" id="clogo"
+            style="width: 500px; height: auto" />
           <!-- </div> -->
         </div>
       </div>
@@ -166,15 +510,20 @@
       <div class="row" id="banner-row">
         <div class="col-md-6" id="banner-col">
           <h3 id="loco">Cyber Safe</h3>
-  
-          <p style="text-align: justify; text-justify: inter-word;">
-          Cyber Safe was organized as part of Compufest 2k23, An International-Level Techfest hosted by the Department of Computer
-          Technology on October 11, 2023. Coordinated by Mr. Himanshu Gajbiye. This event took place in an offline mode, and it
-          attracted participation. With the aim of enhancing cyber awareness and
-          experts in the field of cybersecuring digital safety, the event brought together students and
-          These sessions were highly informative and interactive, offering valuable insights into the world of cyber threats. The
-          Cyber Safe Workshop was a resounding success, providing students with essential knowledge about cybersecurity.
-            <br><br>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            Cyber Safe was organized as part of Compufest 2k23, An
+            International-Level Techfest hosted by the Department of Computer
+            Technology on October 11, 2023. Coordinated by Mr. Himanshu
+            Gajbiye. This event took place in an offline mode, and it
+            attracted participation. With the aim of enhancing cyber awareness
+            and experts in the field of cybersecuring digital safety, the
+            event brought together students and These sessions were highly
+            informative and interactive, offering valuable insights into the
+            world of cyber threats. The Cyber Safe Workshop was a resounding
+            success, providing students with essential knowledge about
+            cybersecurity.
+            <br /><br />
             Faculty Coordinator: Prof.Supriya Thombre, Prof. Kalyani Karule
           </p>
         </div>
@@ -182,7 +531,7 @@
           <!-- <div class="clogo"> -->
           <img class="img-responsive rounded mx-auto d-block clogoclass"
             src="public/Events/compufest2k23/cyber_safe_page1_image.png" alt="" id="clogo"
-            style="width: 500px; height: auto;" />
+            style="width: 500px; height: auto" />
           <!-- </div> -->
         </div>
       </div>
@@ -194,17 +543,22 @@
       <div class="row" id="banner-row">
         <div class="col-md-6" id="banner-col">
           <h3 id="coco">UI UX BOOTCAMP</h3>
-  
-          <p style="text-align: justify;
-                      text-justify: inter-word;">
-          The UI UX Bootcamp organized under Compufest 2k23 was conducted offline at the labs of the Computer Technology
-          Department at Yeshwantrao Chavan College of Engineering (YCCE) in Nagpur. The event was organized by Anup Tarone and
-          Chirayu Sakarkar, and the featured speaker was Ashwini Hingolikar, a UI UX Designer at Medidek in Nagpur. The bootcamp
-          was structured in a modular manner, allowing participants to start with the foundational principles of UI/UX design and
-          gradually progress to more advanced topics. It garnered significant participation from students across various
-          departments who had the opportunity to learn about the insights of UI/UX and engage in hands-on sessions. Additionally,
-          the event also provided discussions on career opportunities in the UI/UX field.
-            <br><br>
+
+          <p style="text-align: justify; text-justify: inter-word">
+            The UI UX Bootcamp organized under Compufest 2k23 was conducted
+            offline at the labs of the Computer Technology Department at
+            Yeshwantrao Chavan College of Engineering (YCCE) in Nagpur. The
+            event was organized by Anup Tarone and Chirayu Sakarkar, and the
+            featured speaker was Ashwini Hingolikar, a UI UX Designer at
+            Medidek in Nagpur. The bootcamp was structured in a modular
+            manner, allowing participants to start with the foundational
+            principles of UI/UX design and gradually progress to more advanced
+            topics. It garnered significant participation from students across
+            various departments who had the opportunity to learn about the
+            insights of UI/UX and engage in hands-on sessions. Additionally,
+            the event also provided discussions on career opportunities in the
+            UI/UX field.
+            <br /><br />
             Faculty Coordinator: Prof. Supriya Thombre, Prof. Kalyani Karule
           </p>
         </div>
@@ -212,112 +566,117 @@
           <!-- <div class="clogo"> -->
           <img class="img-responsive rounded mx-auto d-block clogoclass"
             src="public/Events/compufest2k23/UI_UXBootcamp_page1_image.png" alt="" id="clogo"
-            style="width: 500px; height: auto;" />
+            style="width: 500px; height: auto" />
           <!-- </div> -->
         </div>
       </div>
     </div>
   </section>
 
+  <section id="banner">
+    <div class="container-fluid" id="banner-container">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="doco">Scripted Secrets</h3>
 
-
-<section id="banner">
-  <div class="container-fluid" id="banner-container">
-    <div class="row" id="banner-row">
-      <div class="col-md-6" id="banner-col">
-        <h3 id="doco">Scripted Secrets</h3>
-
-        <p style="text-align: justify; text-justify: inter-word;">
-          The Scripted Secret event, held on October 12, 2026, las part of Compufest 2k23, organized by the Computer Technology
-          Department, was an exciting competition. Coordinated by Mr. Pranav Pandit and Ms. Vidisha Fulzele, the event attracted a
-          total of 13 teams, with each team composed of four students. The challenge posed to the participants was uncovering a
-          hidden treasure on the college campus. This quest required them to solve a series of intricate codes and follow the
-          provided clues. After an intense and exciting competition, Kirtesh Maskey and his team emerged as the victors,
-          showcasing their impressive problem-solving skills and teamwork. The event was a resounding success, providing an
-          engaging platform for students to apply their technical and analytical abilities in a real-world context.
-          <br><br>
-          Faculty Coordinator: Prof.Supriya Thombre, Prof. Kalyani Karule
-        </p>
-      </div>
-      <div class="col-md-6" id="banner-col2">
-        <!-- <div class="clogo"> -->
-        <img class="img-responsive rounded mx-auto d-block clogoclass"
-          src="public/Events/compufest2k23/scripted_secrets_page1_image.png" alt="" id="clogo"
-          style="width: 500px; height: auto;" />
-        <!-- </div> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="banner">
-  <div class="container-fluid" id="banner-container2">
-    <div class="row" id="banner-row">
-      <div class="col-md-6" id="banner-col">
-        <h3 id="roco">Git and Github workshop</h3>
-
-        <p style="text-align: justify; text-justify: inter-word;">
-        The Department of Computer Technology successfully conducted a Git and GitHub workshop on October 7th, 2023, featuring
-        Gandhar Patwardhan as the speaker. The workshop's primary objective was to educate students on the fundamental concepts
-        and significance of Git and GitHub in software development. The event catered to a wide range of attendees, from
-        beginners to experienced developers, and provided valuable insights and practical experience. Attendees were exposed to
-        the advantages of using Git and GitHub for managing code, monitoring modifications, and streamlining collaborative
-        efforts. Overall,ythe workshop contributed to enhancing participants' knowledge and skills in version control and
-        collaboration within the realm of software development.
-          <br><br>
-          Faculty Coordinator: Prof. Supriya Thombre, Prof. Kalyani Karule
-        </p>
-      </div>
-      <div class="col-md-6" id="banner-col2">
-        <!-- <div class="clogo"> -->
-        <img class="img-responsive rounded mx-auto d-block clogoclass"
-          src="public/Events/compufest2k23/gitandgithub_page1_image.png" alt="" id="clogo"
-          style="width: 500px; height: auto;" />
-        <!-- </div> -->
+          <p style="text-align: justify; text-justify: inter-word">
+            The Scripted Secret event, held on October 12, 2026, las part of
+            Compufest 2k23, organized by the Computer Technology Department,
+            was an exciting competition. Coordinated by Mr. Pranav Pandit and
+            Ms. Vidisha Fulzele, the event attracted a total of 13 teams, with
+            each team composed of four students. The challenge posed to the
+            participants was uncovering a hidden treasure on the college
+            campus. This quest required them to solve a series of intricate
+            codes and follow the provided clues. After an intense and exciting
+            competition, Kirtesh Maskey and his team emerged as the victors,
+            showcasing their impressive problem-solving skills and teamwork.
+            The event was a resounding success, providing an engaging platform
+            for students to apply their technical and analytical abilities in
+            a real-world context.
+            <br /><br />
+            Faculty Coordinator: Prof.Supriya Thombre, Prof. Kalyani Karule
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass"
+            src="public/Events/compufest2k23/scripted_secrets_page1_image.png" alt="" id="clogo"
+            style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section id="banner">
+    <div class="container-fluid" id="banner-container2">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3 id="roco">Git and Github workshop</h3>
 
-    <!-- footer -->
-    <section id="footer">
-      <section id="banner">
-        <div class="container-fluid" id="banner-container">
-          <div class="row" id="banner-row">
-            <div class="col-md-4" id="footer-col1">
-              <h3>Location</h3>
-              <p>Yeshwantrao Chavan College of Engineering
-                Hingna Road, Wanadongri, Nagpur- 441110<br>
-                State : Maharashtra<br>
-                Country : India</p>
-            </div>
-            <div class="col-md-4" id="footer-col2">
-              <h3>Contact Us</h3>
+          <p style="text-align: justify; text-justify: inter-word">
+            The Department of Computer Technology successfully conducted a Git
+            and GitHub workshop on October 7th, 2023, featuring Gandhar
+            Patwardhan as the speaker. The workshop's primary objective was to
+            educate students on the fundamental concepts and significance of
+            Git and GitHub in software development. The event catered to a
+            wide range of attendees, from beginners to experienced developers,
+            and provided valuable insights and practical experience. Attendees
+            were exposed to the advantages of using Git and GitHub for
+            managing code, monitoring modifications, and streamlining
+            collaborative efforts. Overall,ythe workshop contributed to
+            enhancing participants' knowledge and skills in version control
+            and collaboration within the realm of software development.
+            <br /><br />
+            Faculty Coordinator: Prof. Supriya Thombre, Prof. Kalyani Karule
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+          <img class="img-responsive rounded mx-auto d-block clogoclass"
+            src="public/Events/compufest2k23/gitandgithub_page1_image.png" alt="" id="clogo"
+            style="width: 500px; height: auto" />
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
 
-              <p>Email Us- acmscycce@gmail.com</p>
+  <!-- footer -->
+  <section id="footer">
+    <section id="banner">
+      <div class="container-fluid" id="banner-container">
+        <div class="row" id="banner-row">
+          <div class="col-md-4" id="footer-col1">
+            <h3>Location</h3>
+            <p>
+              Yeshwantrao Chavan College of Engineering Hingna Road,
+              Wanadongri, Nagpur- 441110<br />
+              State : Maharashtra<br />
+              Country : India
+            </p>
+          </div>
+          <div class="col-md-4" id="footer-col2">
+            <h3>Contact Us</h3>
 
-              
-            </div>
-            <div class="col-md-4" id="footer-col2">
-              <h3>Design & Developed by</h3>
+            <p>Email Us- acmscycce@gmail.com</p>
+          </div>
+          <div class="col-md-4" id="footer-col2">
+            <h3>Design & Developed by</h3>
 
-              <p>Team ACM-YCCE</p>
-
-              
-            </div>
+            <p>Team ACM-YCCE</p>
           </div>
         </div>
-      </section>
+      </div>
     </section>
+  </section>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
