@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
-@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
   margin: 0;
@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1280px;
   margin: auto;
 }
 
@@ -29,7 +29,8 @@ body {
 .team-section .section-title {
   flex-basis: 100%;
   max-width: 100%;
-  margin-bottom: 70px;
+  margin-top: 100px;
+  margin-bottom: 80px;
   text-align: center;
 }
 
@@ -48,7 +49,6 @@ body {
 	color:#0a193d;
 } */
 .team-section .team-items {
-
   flex-basis: 100%;
   max-width: 100%;
   display: flex;
@@ -59,7 +59,7 @@ body {
 .team-section .team-items .item {
   flex-basis: calc(25% - 30px);
   max-width: calc(25% - 30px);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   margin-bottom: 40px;
 }
 
@@ -80,7 +80,7 @@ body {
   text-align: center;
   padding: 20px 15px;
   border-radius: 8px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   margin-top: -40px;
 }
 
@@ -121,7 +121,7 @@ body {
   text-align: center;
   line-height: 32px;
   font-size: 16px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .team-section .team-items .item .inner .info .social-links a:hover {
@@ -129,18 +129,228 @@ body {
 }
 
 /*responsive*/
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .team-section .team-items .item {
     flex-basis: calc(50% - 30px);
     max-width: calc(50% - 30px);
-
   }
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .team-section .team-items .item {
     flex-basis: calc(100%);
     max-width: calc(100%);
-
   }
+}
+/* cards section new styling */
+
+.card {
+  width: 280px;
+  margin: 6px;
+  border-radius: 20px;
+  background: #0a193d;
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .top-section {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card .top-section .border1 {
+  border-bottom-right-radius: 10px;
+  height: 35px;
+  width: 90px;
+  background: #0a193d;
+  position: relative;
+  transform: skew(-40deg);
+  box-shadow: -10px -10px 0 0 #0a193d;
+}
+svg:hover {
+  transition: 0.5s;
+  transform: scale(1.1) translateY(-5px);
+  cursor: pointer;
+}
+
+.card .top-section .border1::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: -15px;
+  background: rgba(255, 255, 255, 0);
+  border-top-left-radius: 10px;
+
+  box-shadow: -5px -5px 0 2px #0a193d;
+}
+
+.card .top-section::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -5px -5px 0 2px #0a193d;
+}
+
+.card .top-section .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .top-section .icons .logo {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 7px 0 7px 15px;
+}
+
+.card .top-section .icons .logo .top-section {
+  height: 100%;
+}
+
+.card .top-section .icons .social-media {
+  height: 100%;
+  padding: 2px 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.card .top-section .icons .social-media .svg {
+  height: 100%;
+  fill: #ffffff;
+}
+
+.card .top-section .icons .social-media .svg:hover {
+  fill: white;
+}
+
+.card .bottom-section {
+  margin-top: 15px;
+  padding: 10px 5px;
+}
+
+.card .bottom-section .title {
+  display: block;
+  font-size: 22px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.title2 {
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.linkedIN {
+  height: 32px;
+  width: 32px;
+  margin-top: -4px;
+  color: white;
+}
+.twitter {
+  margin-top: -1px;
+  height: 28px;
+  width: 28px;
+}
+.top-section {
+  background-image: url('./public/image/lalit-damahe.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.ct-hod {
+  background-image: url('./public/image/rakhimam.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.cse-pratibha-madam {
+  background-image: url('./public/image/Pratibhamam.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.ct-supriya-madam {
+  background-image: url('./public/image/supriyamam.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.cse-Sudhanshu {
+  background-image: url('./public/image/Sudhanshu.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.ct-himanshu {
+  background-image: url('./public/image/Himanshu.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.ct-Sakshi {
+  background-image: url('./public/image/sakshi.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.cse-Adwait {
+  background-image: url('./public/image/Adwait.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.cse-jay {
+  background-image: url('./public/image/jays.jpeg');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.ct-anant {
+  background-image: url('./public/image/anant.jpeg');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.ct-tanish {
+  background-image: url('./public/image/tanish.jpeg');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 300px;
 }
